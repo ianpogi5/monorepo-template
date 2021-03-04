@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start:front": "yarn workspace frontend start",
-    "start:user": "yarn workspace api-user start",
-    "start:company": "yarn workspace api-company start"
+    "start:api": "sls offline -c api.yml start"
   },
   "license": "MIT",
   "private": true,
