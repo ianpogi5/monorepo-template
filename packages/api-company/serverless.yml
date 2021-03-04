@@ -1,0 +1,23 @@
+service: api-company
+
+plugins:
+  - serverless-bundle
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    httpPort: 3001
+    noPrependStageInUrl: true
+    useChildProcesses: true
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  stage: local
+  runtime: nodejs12.x
+  memorySize: 128
+  timeout: 10
+
+functions: ${file(./functions.yml)}

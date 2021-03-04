@@ -1,0 +1,7 @@
+list:
+  handler: src/list.handler
+  events:
+    - http:
+        path: /
+        method: get
+        cors: true
