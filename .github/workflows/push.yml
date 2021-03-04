@@ -91,6 +91,9 @@ jobs:
       - name: Run API
         run: yarn start:api &
 
+      - name: Wait for API
+        run: until nc -z localhost 3001; do sleep 1; done && echo "API started"
+
       - name: End to End tests
         uses: cypress-io/github-action@v2
         env:
