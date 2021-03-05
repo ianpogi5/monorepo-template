@@ -101,7 +101,7 @@ jobs:
         with:
           working-directory: packages/frontend
           start: yarn serve
-          wait-on: "http://localhost:3000, http://localhost:3001"
+          wait-on: "http://localhost:3000, http://localhost:3001/hello"
 
   lighthouse:
     name: Lighthouse

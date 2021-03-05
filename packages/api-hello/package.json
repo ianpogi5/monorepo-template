@@ -1,0 +1,31 @@
+{
+  "name": "api-hello",
+  "version": "0.1.0",
+  "description": "API for hello",
+  "main": "index.js",
+  "scripts": {
+    "start": "sls offline -s dev",
+    "deploy": "sls deploy -s",
+    "deploy:func": "sls deploy function"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": {
+    "name": "Ian Dela Cruz",
+    "email": "ian@kdcsoftware.com",
+    "url": "https://www.kdcsoftware.com"
+  },
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "gb-helper": "*"
+  },
+  "dependencies": {
+    "@kdcio/api-gw-req": "^1.2.0",
+    "@kdcio/api-gw-resp": "^1.4.0",
+    "debug": "^4.3.1",
+    "gb-model": "*",
+    "uuid": "^8.3.2"
+  }
+}
